@@ -13,7 +13,6 @@ def mostrar_menu():
             return opcion
         except ValueError:
                 return -1
-       
-       
+
 
 

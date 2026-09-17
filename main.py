@@ -1,7 +1,8 @@
 from blog.datos import posts
 from blog.menu import mostrar_menu
-from blog.operaciones import listar_posts, buscar_por_titulo, filtrar_por_tag
+from blog.operaciones import buscar_por_titulo, filtrar_por_tag, listar_posts
 from blog.validaciones import validar_post
+
 
 def main():
     while True:
@@ -34,6 +35,7 @@ def main():
         elif opcion == 3:
             busqueda_tag = input("\nFiltrar por tag: ").strip().lower()
             resultados_filtrados = filtrar_por_tag(posts, busqueda_tag)
+            
 
 
 
